@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Eye, EyeOff } from "lucide-react";
+import profileIcon from "@/assets/ProFile.png";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -48,7 +49,7 @@ const Login = () => {
             <div className="w-full max-w-md space-y-8">
                 {/* Logo */}
                 <div className="text-center">
-                    <h1 className="text-2xl font-bold text-primary">ResumeBuilder</h1>
+                    <img src={profileIcon} alt="Profile Logo" className="w-16 h-16 mx-auto" />
                     <p className="text-muted-foreground mt-2">Build your perfect resume</p>
                 </div>
 
