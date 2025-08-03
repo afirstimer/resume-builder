@@ -6,7 +6,7 @@ const Header = () => {
         <header className="w-full bg-background border-b border-border">
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 flex items-center justify-center">
                         <img
                             src={profileLogo}
                             alt="Profile Logo"
