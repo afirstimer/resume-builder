@@ -7,6 +7,8 @@ import { CheckCircle } from "lucide-react";
 import templateModern from "@/assets/template-modern.jpg";
 import templateSimple from "@/assets/template-simple.jpg";
 import templateProfessional from "@/assets/template-professional.jpg";
+import profileLogo from "@/assets/ProFile.png";
+import { Link } from "react-router-dom";
 
 interface TemplateCardProps {
     id: string;
@@ -117,12 +119,12 @@ const TemplatesPage = () => {
             <div className="border-b border-border bg-background/95 backdrop-blur sticky top-0 z-10">
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                                <span className="text-primary-foreground font-bold text-lg">PF</span>
+                        <Link to="/" className="flex items-center space-x-2">
+                            <div className="w-8 h-8 flex items-center justify-center">
+                                <img src={profileLogo} alt="ProFile" className="w-full h-auto" />
                             </div>
-                            <span className="text-xl font-bold text-foreground">ProFile</span>
-                        </div>
+                            <span className="text-xl font-bold text-foreground">ProCV</span>
+                        </Link>
 
                         {/* Progress indicator */}
                         <div className="flex items-center space-x-4">

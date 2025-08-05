@@ -6,14 +6,16 @@ const Header = () => {
         <header className="w-full bg-background border-b border-border">
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                        <img
-                            src={profileLogo}
-                            alt="Profile Logo"
-                            className="w-full h-auto"
-                        />
-                    </div>
-                    <span className="text-xl font-bold text-foreground">ProFile</span>
+                    <a href="/" className="flex items-center space-x-2">
+                        <div className="w-8 h-8 flex items-center justify-center">
+                            <img
+                                src={profileLogo}
+                                alt="Profile Logo"
+                                className="w-full h-auto"
+                            />
+                        </div>
+                        <span className="text-xl font-bold text-foreground">ProCV</span>
+                    </a>
                 </div>
 
                 <nav className="hidden md:flex items-center space-x-8">
@@ -23,10 +25,10 @@ const Header = () => {
                     <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                         Examples
                     </a>
-                    <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    <a href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                         Pricing
                     </a>
-                    <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    <a href="/help" className="text-muted-foreground hover:text-foreground transition-colors">
                         Help
                     </a>
                 </nav>
